@@ -1,0 +1,7 @@
+List of Rooms
+<br>
+
+{% for room in chatroom%}
+<a href="{% url 'room' room.slug %}">{{room.name}}</a> </br>
+
+{% endfor %}

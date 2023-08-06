@@ -41,7 +41,7 @@ chatSocket.onmessage= function(e){
     const data = JSON.parse(e.data)
     if(data.message){
         console.log("Received message to client is", data.message)
-        let html = data.username + ':' + data.message + '</br>'
+        let html = data.username + ':'  + data.message + '</br>'
         document.getElementById('chat-messages').innerHTML +=html
 
 
